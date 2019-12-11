@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+
+<head>
+    <title>Lucky ogurayuka </title>
+
+    <style>
+        * {
+
+            background-color: ivory;
+        }
+
+        a {
+            text-decoration-line: none;
+            color: pink;
+            font-size: 98px;
+        }
+
+        img {
+            width: 300px;
+            height: 300px;
+            border-radius: 150px;
+            border:1px solid pink;
+            /* 이미지 반크기만큼 반경을 잡기*/
+        }
+
+        img:hover{  width: 300px;
+            height: 300px;
+            border-radius: 150px;
+            border:5px solid pink;
+            transition:0.7s;
+
+
+        }
+        h1 {
+            border: 5px solid pink;
+            color: pink;
+            width: 630px;
+            text-align: center;
+            font-size: 100px;
+        
+
+        }
+
+        #footer{
+            display: block;
+            margin-top: 50px;
+            color: black;
+            font-size: 10px;
+            font-weight: 60px;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+
+
+    <script language='javascript'>
+
+        // 렌덤으로 출력할 이미지 갯수 지정
+        var icnt = 6;
+
+        // 이미지는 아래와 같은 방식인 push 로 추가하면 됩니다.
+        var al = new Array();
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hlqgLTlOYM15aNR_EPsRMCRJoNTEjVilWME0kZC9jOXAvWSReMk80fCVlAzAhQTdYelIpTgIzMRB-RxFgMxEUXgZlFBI3cXdUMVQmYAFNJWl_GXQMZVR4PHk0ZWt3DSZcblN_ODo0ZGx_DXUAYQ" border="0"> 1</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hneWM2LExMUpqNBwoB19OHSJpNyUTVytCAEwmcB9iO2QfWCZKAk42aBVkASQRQDVMShQCLR1Uan5DQ35bHwcmaylgKgdDXQ93BggGWhVxCyYwGHYYVVR_KkY8aXlHDCRJVVJ7JAo1Zn9HDXAfBA" border="0"> 2</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hcEArcZ6IPGp8CxE2OHdDPTNWOgUFaCZiFnMrUAldNkQJZytqFHE7SANbDAQHfzhsXBczWCx-JBFXextgABgaBQlga1MWZ3JrFholWx54BQMWJ3s4Qmx0DFoKYlpRMy49RWx0SVgCZFxXOntv" border="0"> 3</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hSKNtKlYHDGRzDSGhJ6pzMztQCgsKbhZsGXUbXgZbBkoGYRtkG3cLRgxdPAoIeQhiUwMLWlVEEBE1bhE0GQMnYxVvIDU7XghBMSsqBwUIEx8IIUs2TW1BBVEJUldeNRlmTGNECxMMWwEKNEpmTg" border="0"> 4</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hmgJ4KQdjMkh3TR_Uv01NHz8QNCcOLihAHTUlcgIbOGYCISVIHzc1aggdAiYMOTZOVyIbfS9PGX0hO3xkNGkcRTErNxgnfiFVClcWcAAXCiQGYXUaTil-LVVLbHhadSAeTCt9LBdMZHpcKScbTQ" border="0"> 5</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hhBCw2-nHN21-Dh07g3tIOjFTMQIHbS1lFHYgVwtYPUMLYiBtFnQwTwFeBwMFejNrXg0CVR1vPyAWQS85FjsZQgFyLQ8aOCM7ITMAAiJ7biVQInA_R29-DVwJaVxTNiU6QGB5TloGbglTOHA4" border="0"> 6</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hfZdvtRSFOXVZDxN4-d9GIhFSPxogbCN9M3cuTyxZM1ssYy51MXU-VyZfCRsiez1zeWwAdR9UJkEDZxloMRkXdAgJGTEUdBtZLSIwYARMZz18I34nYWhzG3gPZ0V0NyxwZm1_GzkObxVzanslYw" border="0"> 7</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0h2rV7v5vkbV1rTkeyFw8SCiMTazISLXdVATZ6Zx4YZ3MeInpdAzRqfxQeXTMQOmlbS1slaBA7VTkdGX0PEHMmTTFMRWgbBy1tKUsjQhYTRzUyYioPUysnPkpIM2RGdngDUy0mOwtPOz9DdiMKUA" border="0"> 8</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hOpxbkZbKEF9FGzqsB_ZvCA1GFjA8eApXL2MHZTBNGnEwdwdfLWEXfTpLIDE-bxRZZQ5XZAVzKA0oYyQNf3kjbAZZDRYPajRCeysYaQIbCCdpN1cNfX9cOmIcTm5oIwVaen5bOiUaRjppLVBZKQ" border="0"> 9</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hzjlRQBEyJUVRKw-yCvZaEhl2IyooSD9NO1MyfyR9L2skRzJFOVEiZy57FSsqXyFDcUU8UCQrPwI9XWUaKDAqdzJtAjIUcgtXGDhvfxZAIQg1B2IXaU5iJHYoe3R8EzBDbkliIzEqcycuHTcVPQ" border="0">10</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hI7I_tSz8Fhh0JjzeDCtpTzx7EHcNRQwQHl4BIgFwHDYBSgEYHFwROgt2JnYPUhIeVEIyFjh2EV0wdhQGHR0lAyJdEUw8TlI4KUFfKBJtI1oyClFKTEVYd1UlSClZHgRPQEhcdhQnQH0MHgNLGA" border="0">11</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hrMh4hHJ2LWJVTQeyvxRSNRoQKw0sLjdqPzU6WCAbJ0wgITpiPTcqQCodHQwuOSlkdVADXgQWIFZ8OSM3M3k5XwgvdRslIDNkM3k_BSgGJwYrYWowbS9mAHdNc1N4dThhYCllQXFFJFd5KD1g" border="0">12</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hYq2uOj6fBl4PDCzbBYp5CUBRADF2bxxWZXQRZHpaDHB6YBFeZ3YBfHBcNjB0eAJYLwMWbn5lGTtcOR5qQzZIWk1OPWh6aRlDNh8LYEFSPS8qIEEMN2NLOCwNWWYiNBNdMG5LfStcWDohaBMI" border="0">13</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0h_gf3CJafAEhbSirPy6l_HxMXBiciKRpAMTIXci4cCmYuJhdIMzAHaiQaMCYgPgROeyQLewYSBhEgDxxKP1UzdgVKNgE-CRRgBkgLdScNKAdyZkcaYyVMLXtIX3F2chVMZCpIKjtLDngkKEJOYg" border="0">14</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0h9pejxd08Zl9YE0zRWQkZCBBOYDAhcHxXMmtxZS1FbHEtf3FfMGlhfSdDVjEjZ2JZeBZBPDsVXg0AUXlqFnwvTBZrYxUzRWl8YCtBUS9OTA8VPyENYHwvP3obOWd1K3NZYXIpPjgSaGxxISMLMQ" border="0">15</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hjlYEF0qUNUNkPB_C7SpKFCxhMywdXy9LDkQieRFqP20RUCJDDEYyYRtsBS0fSDFFRDgoWBVYKg4wCTZiHyY_JAlMbyEQcnsTAAQZTjRZDggfEHIRXFN9JUE9antJBCAdXlh_IwQ9O3BKXCEXWA" border="0">16</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hlVSZCcD-M3luIxn9rNpMLiZ-NRYXQClxBFskQxt1OVcbTyR5Blk0WxFzAxcVVzd_TgwLSkpBCEwaVg5NARB-dzxTCBUFEB9kByIUQiNBNzMVD3QrVkx5HUklbUhDGyEvUk19GQ4iPUkURHMnBg" border="0">17</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hRi_GiSAqDUZiPifKz39yESpjCykbXRdOCEYafBdoB2gXUhpGCkQKZB1uPSgZSglAQgcaViFaUikWUwsVNVk5RD9kFioVDSlxVho2ZwRsOBIsEkoUWlFKJUM3U3NPBh8TXV1GIAI_A3VJXEwRWQ" border="0">18</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hHzHPJUw1F1V1KTw6WvloAj10EToMSg1dH1EAbwB_HXsARQBVHVMQdwp5JzsOXRNTVRo4TzlVSz5ZRjhETjg8awp-TzAKEQ1RP0ovYRhqDDUhBVAHTk5RM1UqSWFYEQJUT0taMxUoGWBdHFgFTw" border="0">19</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0h8HOq9ap6Z2dyCE35tFgYMDpVYQgLa31vGHBwXQdebUkHZHBnGnJgRQ1YVwkJfGNhUjphSgVKXxItPVZUMD1TZS9JPCIsP3l2KQ5jdQtBeicYJCA1SmYhB1IKOVdfMHI5SG4gAhIJaVVbbyBmSA" border="0">20</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hejMWkcPAOkVwLhE0vqtFEjhzPCoJTSBNGlYtfwV4MGsFQi1FGFQ9Zw9-CisLWj5DUAs0XlNROAolfiVQESN0ew92ZgwEZi17PikIIl1ZPykKAn0XS0hzJVcvZHRdFi9DS0hzIRAvNHFeSi1BTw" border="0">21</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0heJavwtJMOmVcDxEW5P5FMhRSPAolbCBtNnctXylZMEspYy1lNHU9RyNfCgsnez5jfBAWQStnZCMtdHRgPxs-YXxtGFUjbzxEHjccAjJ4Py8RI303Z2lyAXANZFRxNy9kZ2F2AjwONFFwai87Zw" border="0">22</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0h-g8448OFckgFTVk-ydANH00QdCd8LmhAbzVlcnAbeGZwIWVIbTd1anodQiZ-OXZOJU1pLCULSS9RfjwbOn5EKngVJAhKeWNaTlNefHo9dQdsYTUaPis4KyVELHkodWAeMS47KWVMfH19KTxNaQ" border="0">23</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hPaR39WsHD05vSiQL0pNwGScXCSEWKRVGBTIYdBocBWAaJhhOBzAIbBAaPyAUPgtIT04efCM6JTsVIUtELWUaTThLOhk7cwtNMkQkYRMIKQodZkgcVC9ELE9OUX9CchpIVS1ALQ9LAXoWL04eBw" border="0">24</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hc6zBb2m6PBlHOxdmYfpDTg9mOnY-WCYRLUMrIzJtNjcyVysZL0E7OzhrDHc8TzgfZygtPSM6A3kUcgYMDFVzDTlpHGgwQggaGg8HGRttPFsyF3tLfF16eGY7YihqAykbc19weic6Mi1vD3hGfA" border="0">25</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0h43q-z3r3axxMVEBNjZkUSwQJbXM1N3EUJix8JjkCYTI5OHwcJC5sPjMEW3I3IG8abFp5ChUXbXsDB0cuJm8iPzASMXAAMS8cIG9jDjIhXlJgeCxOdzAtfGpRNS1hbHlLdjQkfyxVZSpiMy5DIA" border="0">26</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hUNY2UjEnCmFkSyE32Ol1NisWDA4dKBBpDjMdWxEdAE8RJx1hDDENQxsbOg8fPw5nRHMkThosKCozMi0-Lmo5YAFIFgE6JDhjOCoXeigqNSspZ00zXy9BBUdDVVlJcxg2WChHQkAbUwQcchkz" border="0">27</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hL8F2sQ1UExd7SzhOEqNsQDMWFXgCKAkfETMELQ4dGTkOJwQXEzEUNQQbI3kAPxcRW34bcx8PLUcVGjE1IVggDB0-EEMJODMGPkQVCSBPO2ESZ1RFQChed19LTSdWcwYUQCtZeBtKHSEGcgcREA" border="0">28</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hQ-KLINqMDgJ2NSUzBLRxVT5oCG0PVhQKHE0ZOANjBCwDWRkCHk8JIAllPmwNQQoEVgY0JVdWLzAGWBEfSRUVJlB0VEwhZCtTEjIVDBZ8NEclGUlQTVdJYVs9UDNbDRxVTlFHbRY0ADpYVU4GTQ" border="0">29</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hKqmbXq9FFF5QGz9Z995rCRhGEjEpeA5WOmMDZCVNHnAldwNeOGETfC9LJDArbxBYcH8-Xx0ZQxAkIwVJDDsBcTNTSTF7VAF7E3weRBFDFRsON1MMa3pcOHIYSm99IwYLaXhYOTAaGmYvflMBbw" border="0">30</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hmLFvIYxSMmN7DxmYdJpNNDNSNAwCbChrEXclWQ5ZOE0OYyVjE3U1QQRfAg0AezZlWxslBlt8LyckeT1zBgl_dgNGaRUJRXBXLiwrZydkH1UUI3UxQWh5BFoKbFJWNydnRWx1BhsOPAZfPH1mRA" border="0">31</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hYRVyP1vaBn1rAC2_J6d5KiNdABISYxx1AXgRRx5WDFMebBF9A3oBXxRQNhMQdAJ7SxEVGzcDIgo1W0V8ASM_GxZoLAUcVzR3Cg0Wax5eJDA8LEEvUWZJG04FWURGOBN8XmNOEgsBCBlGN0h_Vg" border="0">32</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0h08jcl1TybxdXGkTBJcMQQB9HaXgueXUfPWJ4LSJMZTkidngXP2BoNShKX3ksbmsRdx9yA3FObXIdQ3gFIDlcdQRZRUAbbVVCbAhZNCtlOHolNihFbXwocXAdMSJ6In1AaH8mdzcbYXMvei9HPw" border="0">33</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hgiXcPHx7OEZlGhOPElVHES1HPikceSJOD2IvfBBMMmgQdi9GDWA_ZBpKCCgebjxARTQPUEFyNhUUQwx3OA92WkheGjYBQztHWBxyIQRaDXcgNn8UX3xxIEQdZ39IIi1DWXR3IwUbNiIYen8RUA" border="0">34</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hQo4IsB46DkAJMCWQo9NxF0FtCC9wUxRIY0gZenxmBG58XBlAYUoJYnZgPi5yRApGKT5Fcm5zLxVmdkpAfD8fTXNKLHRkBgJmVwoETmdlEDtxHEkSM1VDJiowUXkkCBtDMFNGJmkxACcmUh1GMA" border="0">35</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0htUkmyjSaK3pWFADcMBJULR5JLRUvdzFyPGw8QCNCIVQjeDx6Pm4sWClEGxQtYC98djExXHNMF01_fWlMHxAQQQ0RLU14YC9SFQZtHiFBCDYLOGwobHFsGHUVdEJ7LD58b3RlGjYVJR0uLG8pag" border="0">36</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hcGn0tAerPGhTSReyMdRDPxsUOgcqKiZgOTErUiYfNkYmJStoOzM7SiwZDAYoPThuc197Uh4VMhl6Dh5JbWQICRMaJgwteXltH051SHEKKSp5ZXs6aSx0BnFIYll-cSltZyx7BjNIMg92cXxtPw" border="0">37</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hT2Ph9ZdyCx1tESCl8jJ0SiVMDXIUchEVB2kcJxhHATMYfRwdBWsMPxJBO3MWZQ8bTTBNMy0RCm4pdRkLJgIeAjJrMk0CQQwdJSEXBzRFD0wEPUxPV3JMeUoRVCRAKR4YVH9Aeg0QBi0TckRMVA" border="0">38</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hZW0oM6rjBXgNFi74ACh6L0VLAxd0dR9wZ24SQnhAD1Z4ehJ4ZWwCWnJGNRZ2YgF-LXQ0FlpPDCEiUQV1NAwpZHAfDkFbchsqTDYhekF_LglQOkIqN3RPHSkXWkAgLhB7NndPGW0XCEsiJUQqOQ" border="0">39</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hOR_1E9o0EH1iSDzuFuNvKi0VFhIbKwp1CDAHRxceGlMXJAd9CjIXXx0YIBMZPBR7QiwpHwQ6BRIbDRUvC1oKZyUDGxM5DzNVKHweRS4pKjgxZFcvXSpXHUdNSk5PcAV4VipbXkZBTEwfeQN5" border="0">40</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hwSKB2uSRKHx2OwTvAMxXKz5mLhMPWDJ0HEM_RgNtIlIDVz98HkEvXglrGBINTyx6Vl4EHRpnNQpcfAxXOSs6Tih5EkU-CjR6MRw5RhBJdUwkF28uSVlvHFMycE9bAzorTVlnGxY6f05aW2wiSw" border="0">41</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hWF8YO9W-CGkFICT6c4d3Pk19DgZ8QxJhb1gfU3B2AkdwTB9pbVoPS3pwOAd-VAxvJRghb0NZIF5edQw5fDs9fV1HKAFTRzZ_UjMnUCZzPiJ8DE87OkJPCSAoUlooGBo8PUNGCWUhX1spQExrOA" border="0">42</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hjaJdz8IYNU53HRnUE-9KGT9AMyEOfi9GHWUidAJLP2ACcSJOH2cybAhNBSAMaTFIVyE7WxtJPnoYRABENXIMcycZHHYsUA19NAgEKVFHAnckMXIcSHx-LFQcY3xaJSBLT35yIRccYnxSJXMQTw" border="0">43</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0hFqah0UthGV5cETXqFvJmCRRMHzElcgNWNmkOZClHE3ApfQ5eNGsefCNBKTAnZR1YfCgkcXhDFW10egN-HDQxRXplBA8wIl4MAxcJWAJlL21yPV4MY3VQMH0YT21xKQxdY3FXOjwQTm8mJgpYZQ" border="0">44</a>');
+        al.push('<a href="lotto.html"><img src="https://obs.line-scdn.net/0h25E5E7ZKbRp4TEeTSCMSTTARa3UBL3cSEjR6IA0aZzQNIHoaEDZqOAccXXQDOGkcWF9xIwQlO3NSCCscLXckHi4kOlFTDl08H3leflQraioOYCpIQCIifFtMMylVdHgYQighexhNYykFey9PTQ" border="0">45</a>');
+
+
+        function fncInit() {
+            fncReSetImg();
+        }
+
+        function fncReSetImg() {
+            var obj = document.getElementById('SIMG');
+            //    var ran = parseInt(Math.random()*100)%al.length;
+
+            obj.innerHTML = fncRandom();//"<img src='http://"+al[ran]+"'>";
+        }
+
+        function fncRandom() {
+            var ors = new Array();
+
+            while (true) {
+                if (ors.length >= icnt) break;
+                var num = (parseInt(Math.random() * 45) % al.length);
+
+                var flg = true;
+                for (var j = 0; j < ors.length; j++) {
+                    if (num == ors[j]) {
+                        flg = false;
+                        break;
+                    }
+                }
+
+                if (flg)
+                    ors.push(num);
+            }
+
+            var img = '';
+            for (var i = 0; i < ors.length; i++) {
+                img += al[ors[i]];
+            }
+
+            ors = null;
+
+            return img;
+        }
+
+//-->
+    </script>
+</head>
+
+<body leftmargin='0' topmargin='0' onload='javascript:fncInit();'>
+    <h1>ogurayuka45</h1>
+    <form name='frm'>
+
+
+        <span id='SIMG'></span>
+
+
+    </form>
+    <footer>
+            <a href="https://lineblog.me/yuka_ogura/" target="_black" id="footer">img:https://lineblog.me/yuka_ogura/</a>
+        <a href="https://gall.dcinside.com/mgallery/board/lists?id=ogurayuka0905" target="_black" id="footer">DCogurayukagall©</a>
+    
+    </footer>
+</body>
+
+</html>
